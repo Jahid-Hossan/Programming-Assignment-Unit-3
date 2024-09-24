@@ -74,7 +74,6 @@ class StudentManagement {
         for (Student student : studentList) {
             if (student.id == id) {
                 student.displayDetails();
-                ;
                 found = true;
                 break;
             }
