@@ -122,7 +122,7 @@ public class StudentRecordManagementSystem {
                     int id = scanner.nextInt();
                     System.out.println("Enter student age: ");
                     int age = scanner.nextInt();
-                    System.out.println("Enter student");
+                    System.out.println("Enter student grade: ");
                     scanner.nextLine();
                     String grade = scanner.nextLine();
                     StudentManagement.addStudent(id, name, age, grade);
@@ -154,6 +154,12 @@ public class StudentRecordManagementSystem {
                 case 4:
                     // Viewing total students
                     StudentManagement.displayTotalStudents();
+                    break;
+
+                case 5:
+                    // Exit the program
+                    exit = true;
+                    System.out.println("Exiting the program.");
                     break;
 
                 default:
